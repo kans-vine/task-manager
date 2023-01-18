@@ -1,0 +1,15 @@
+= RESTful Employee API Specification
+{project-version}
+:doctype: book
+
+== Add a new task
+
+A `POST` request is used to add a new task
+
+operation::add-task[snippets='http-request,request-fields,http-response']
+
+== Find a task by id
+
+A `GET` request is used to find a new tsak by id
+
+operation::find-task-by-id[snippets='http-request,path-parameters,http-response,response-fields']
