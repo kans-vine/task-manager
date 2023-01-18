@@ -7,15 +7,31 @@
 * Write a Java service which offers two end points to create and list all the tasks
 ### What it offers:
 * A secured rest api to create a task and fetch all the existing tasks 
- 	1) POST http://localhost:8082/api/tasks/ -> To add a new task
+ 	## Add a new task:
+	1) POST http://localhost:8082/api/tasks/ 
  
 		 {
 			"title":"Create a Task Manager Java Service",
-			"description": "A microservice to handle the task manager",
-			"status": true
+			"description": "A service to handle the task manager",
+			"status": "Not Started"
 		 }
-
- 	2) GET http://localhost:8082/api/tasks/ -> To fetch all the tasks
+	2) POST http://localhost:8082/api/tasks/ 
+ 
+		 {
+			"title":"Create a Task Manager microservice",
+			"description": "A service to handle the task manager",
+			"status": "In Progress"
+		 }
+	3) POST http://localhost:8082/api/tasks/ 
+ 
+		 {
+			"title":"Create a Task Manager Service",
+			"description": "A service to handle the task manager",
+			"status": "Completed"
+		 }
+	## List all available tasks:
+ 	1) GET http://localhost:8082/api/tasks/
+	
 * Service monitoring endpoint to monitor the <a href="http://localhost:8082/actuator/health">health check</a> of the microservice
 * API Documentation and Testing tool <a href="http://localhost:8082/swagger-ui/">Swagger</a> to vaildate the end points 
 * Configured the in-memory persistance to persist the data in the microservice
